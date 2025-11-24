@@ -1,4 +1,4 @@
-﻿# 🔄 Real-Time Delta Lake Ingestion Pipeline
+﻿#  Real-Time Delta Lake Ingestion Pipeline
 
 This project simulates a real-time data ingestion pipeline using Delta Lake on Databricks. It continuously appends fake data (Name, Address, Email) to a Delta table at scheduled intervals, tracks Delta versions, and sends HTML email summaries after each run.
 
@@ -11,9 +11,9 @@ The pipeline includes:
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-### ✔ **1. Real-Time Fake Data Generation**
+###  **1. Real-Time Fake Data Generation**
 Creates synthetic records:
 - Name  
 - Address  
@@ -22,7 +22,7 @@ With a configurable row count.
 
 ---
 
-### ✔ **2. Delta Lake Storage**
+###  **2. Delta Lake Storage**
 - Appends new rows on every run  
 - Adds ingestion timestamp  
 - Ensures ACID transactions  
@@ -30,7 +30,7 @@ With a configurable row count.
 
 ---
 
-### ✔ **3. Delta Version Tracking**
+###  **3. Delta Version Tracking**
 On every trigger, the pipeline automatically extracts:
 - **Latest Delta version**
 - **Version timestamp**
@@ -39,7 +39,7 @@ On every trigger, the pipeline automatically extracts:
 
 ---
 
-### ✔ **4. Automated Email Notification**
+###  **4. Automated Email Notification**
 Each run sends an HTML email containing:
 - Number of rows ingested  
 - Current ingestion timestamp  
@@ -48,19 +48,19 @@ Each run sends an HTML email containing:
 
 ---
 
-### ✔ **5. 5-Minute Automated Scheduling**
+###  **5. 5-Minute Automated Scheduling**
 This notebook is scheduled via **Databricks Jobs** to run **every 5 minutes**, providing near real-time ingestion behavior.
 
 ---
 
-## 📦 Pipeline Flow
+##  Pipeline Flow
 - Generate Fake Data → Add Timestamp → Append to Delta →
 Track Version Changes → Convert to HTML → Send Email →
 Scheduled Every 5 Minutes
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 | Component | Technology |
 |----------|------------|
@@ -88,4 +88,5 @@ Scheduled Every 5 Minutes
 ├── README.md
 
 ```
+
 
